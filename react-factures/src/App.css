@@ -1,0 +1,261 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ==== BODY ==== */
+body {
+  font-family:'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #091f2e;
+  background: linear-gradient(90deg, rgba(9, 31, 46, 1) 0%, rgba(20, 143, 126, 1) 50%, rgba(9, 31, 46, 1) 100%);
+  color: #333;
+}
+
+
+/* ==== CONTAINER ==== */
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== TITRES ==== */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00796b;
+}
+
+.header-actions {
+  display: flex;
+  gap: 500px;
+  margin-bottom: 20px;
+}
+
+
+/* ==== FORMULAIRE ==== */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1 1 45%;
+  font-size: 14px;
+  background-color: #00796b;
+}
+
+/* ==== BOUTONS GÉNÉRAUX ==== */
+button,
+.ajouter-btn,
+.icon-btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #4dd0e1, #00796b);
+  color: white;
+  box-shadow: 0 4px 10px rgba(77, 208, 225, 0.3);
+}
+
+button:hover,
+.ajouter-btn:hover,
+.icon-btn:hover {
+  background-image: linear-gradient(135deg, #26c6da,#00796b);
+  transform: scale(1.03);
+}
+
+/* ==== BOUTONS SPÉCIAUX ==== */
+.edit-btn {
+  background-image: linear-gradient(135deg, #64b5f6, #42a5f5);
+}
+
+.delete-btn {
+  background-image: linear-gradient(135deg, #ef5350, #e53935);
+}
+
+/* ==== TABLE ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e3f2fd;
+  color: #00796b;
+}
+
+tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* ==== MESSAGES ==== */
+.message {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message.success {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+}
+
+.message.error {
+  background-color: #ef9a9a;
+  color: #b71c1c;
+}
+
+/* ==== AJOUTER FACTURE ==== */
+.ajouter-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==== ICONES ==== */
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  margin: 0 0.3rem;
+  color: #555;
+  transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ==== PAGE DE CONNEXION ==== */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #ffffff;
+
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #333;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.login-container input {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color:#00796b;
+}
+
+.login-container button {
+  background-image: linear-gradient(135deg, #4dd0e1, #00796b);
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.login-container button:hover {
+  background-image: linear-gradient(135deg, #26c6da, #00796b);
+  transform: scale(1.05);
+}
+.action-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* espace horizontal entre les icônes */
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* RESPONSIVE STYLES */
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .ajouter-btn,
+  .logout-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .icon-btn {
+    font-size: 1em;
+    margin: 0 0.2rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
