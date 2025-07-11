@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Facture extends Model
 {
     protected $fillable = ['client', 'produit', 'quantite', 'prix_unitaire'];
+    protected $fillables = ['client', 'produit', 'quantite', 'prix_unitaire'];
 }
